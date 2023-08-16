@@ -1,0 +1,94 @@
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+.sign-in-container {
+  width: 60%;
+  height: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sign-in-title {
+  font-size: 10px;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.login-forget-password-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.forgot-password-link {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.new-acc-button {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  position: relative;
+}
+
+.badge-container::before  {
+  content: "Beta";
+  position: absolute;
+  top: 25px;
+  right: -10px;
+  Width: 38px;
+  font-size: 14px;
+  background-color: #B0407C;
+  text-align: center;
+  color: #fff;
+  border-radius: 64px;
+  padding: 4px 5px 4px 5px;
+}
+
+.google-button {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 70px;
+}
+
+.footer-post {
+  display: flex;
+  justify-content: center;
+}
+
+.side-image {
+  background-color: #fafafb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (max-width: 768px) {
+  .main-container {
+    grid-template-columns: 1fr; 
+  }
+
+  .sign-in-container {
+    width: 90%; 
+    height: auto;
+  }
+
+  .side-image {
+    display: none; 
+  }
+}
