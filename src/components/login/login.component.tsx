@@ -51,7 +51,7 @@ const Login = () => {
           </div>
           <div className="login-forget-password-container">
             <Buttons label="LOGIN" width="25%" height="40px" color="blue" arrow/>
-            <Link className="forgot-password-link" to="">
+            <Link className="forgot-password-link" to="/">
               Forgot your password?
             </Link>
           </div>
