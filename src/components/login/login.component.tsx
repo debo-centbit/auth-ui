@@ -5,6 +5,7 @@ import InputForm from "../input-form/input-form.component";
 import Buttons from "../button/button.component";
 import Footer from "../footer/footer.component";
 import LoginPromotionImage from "../../assets/login-promotion logo.png";
+import { Colors } from "../themes/colors";
 import "./login.css";
 
 const Login = () => {
@@ -50,7 +51,7 @@ const Login = () => {
             <InputForm label="Password *" width="53ch" />
           </div>
           <div className="login-forget-password-container">
-            <Buttons label="LOGIN" width="25%" height="40px" color="blue" arrow/>
+            <Buttons label="LOGIN" width="25%" height="40px" color={Colors.blue} arrow/>
             <Link className="forgot-password-link" to="/">
               Forgot your password?
             </Link>
@@ -61,15 +62,15 @@ const Login = () => {
               label="CREATE NEW ACCOUNT"
               width="100%"
               height="45px"
-              color="black"
+              color = {Colors.black}
             />
             <p className="badge-container"></p>
           </div>
           
           {/* </div> */}
           <div className="google-button">
-            <Buttons label="GOOGLE" width="15ch" height="45px" color="black" />
-            <Buttons label="" width="15ch" height="45px" color="black" />
+            <Buttons label="GOOGLE" width="15ch" height="45px" color={Colors.black} />
+            <Buttons label="" width="15ch" height="45px" color={Colors.black} />
           </div>
         </div>
 
@@ -100,14 +101,6 @@ const Login = () => {
             src={LoginPromotionImage}
           />
         )}
-        <div>
-          <div>
-        <p></p>
-        <p></p>
-        <p></p>
-          </div>
-          <div></div>
-        </div>
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { FaArrowRight } from 'react-icons/fa';
+import { Colors } from '../themes/colors';
 
 type ButtonsProps = {
   label: string;
@@ -19,7 +20,7 @@ const Buttons = (props: ButtonsProps) => {
     width: props.width || 'auto',
     height: props.height || 'auto',
     backgroundColor: props.color || color, 
-    color: 'white',
+    color: Colors.white,
     border: 'none',
     borderRadius: props.border || '4px', 
     cursor: 'pointer',
