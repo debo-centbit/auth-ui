@@ -52,7 +52,7 @@ const Login = () => {
           </div>
           <div className="login-forget-password-container">
             <Buttons label="LOGIN" width="25%" height="40px" color={Colors.blue} arrow/>
-            <Link className="forgot-password-link" to="/">
+            <Link style={{color: Colors.black}} className="forgot-password-link" to="/">
               Forgot your password?
             </Link>
           </div>
@@ -78,7 +78,7 @@ const Login = () => {
           <Footer />
         </div>
       </div>
-      <div className="side-image">
+      <div className="side-image" style={{backgroundColor: Colors.gray}}>
         {promotionImage ? (
           <img src={promotionImage} />
         ) : (

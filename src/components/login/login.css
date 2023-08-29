@@ -33,7 +33,6 @@
 }
 
 .forgot-password-link {
-  color: black;
   text-decoration: none;
   cursor: pointer;
 }
@@ -71,7 +70,6 @@
 }
 
 .side-image {
-  background-color: #fafafb;
   display: flex;
   justify-content: center;
   align-items: center;
